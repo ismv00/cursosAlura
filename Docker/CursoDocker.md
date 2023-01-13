@@ -12,4 +12,5 @@ docker rm id - remove um container
 docker run -it ubuntu bash - cria um container e já entra no modo interativo dele
 docker run -d continaer - cria o container e retornar para o terminal 
 docker port container - mostra o mapeamento de portas de um container 
-docker run -d -P 8000:80 container 
+docker run -d -P 8000:80 container expoe uma porta 
+docker network create --driver bridge minha-rede  -- cria uma rede com o nome minha-rede
